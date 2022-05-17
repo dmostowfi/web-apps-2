@@ -15,10 +15,7 @@ class CompaniesController < ApplicationController
 
   def create
     @company = Company.new
-    @company["name"] = params["company"]["name"]
-    @company["city"] = params["company"]["city"]
-    @company["state"] = params["company"]["state"]
-    @company.save
+    @company = paramas[]
     redirect_to "/companies"
   end
 
